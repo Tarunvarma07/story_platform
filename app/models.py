@@ -9,3 +9,5 @@ class Story(Base):
     title = Column(String)
     content = Column(String)
     author = Column(String)
+    email = Column(String, unique=True)
+    password = Column(String)
